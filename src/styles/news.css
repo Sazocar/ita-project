@@ -18,7 +18,21 @@ body {
   padding: 0px 12px;
 }
 
-.burguer {
+.navbar__mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: 250px;
+  background-color: #040D43;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+#burger {
+  display: none;
   cursor: pointer;
 }
 
@@ -26,20 +40,19 @@ body {
   width: 200px;
 }
 
-.navbar__ul {
+.navbar__ul, .navbar__mobile__ul {
   list-style: none;
   display: flex;
 }
 
-.navbar__ul > li > a {
+.navbar__ul > li > a , .navbar__mobile__ul >li > a{
   font-weight: 400;
-  color: lightgray;
   padding: 0px 16px;
   text-decoration: none;
-  color: white;
+  color: rgb(217, 217, 217);
 }
 
-.navbar__ul a:hover {
+.navbar__ul a:hover, .navbar__mobile__ul a:hover {
   color: blue;
 }
 
@@ -276,6 +289,10 @@ footer {
 }
 
 @media (max-width: 880px) {
+
+  #burger {
+      display: inline;
+    }
 
   .navbar {
     justify-content: space-between;
