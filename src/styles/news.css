@@ -1,10 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .navbar {
   height: 60px;
   background-color: #040D43;
@@ -12,6 +16,10 @@
   align-items: center;
   justify-content: space-around;
   padding: 0px 12px;
+}
+
+.burguer {
+  cursor: pointer;
 }
 
 .img__ita-logo {
@@ -31,6 +39,10 @@
   color: white;
 }
 
+.navbar__ul a:hover {
+  color: blue;
+}
+
 .section__title {
   height: 100vh;
   background-color: #0C1356;
@@ -43,6 +55,7 @@
 }
 
 .section__left-side {
+  height: 100vh;
   width: 30%;
   height: 230px;
   display: flex;
@@ -97,8 +110,6 @@ button:active {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 24px;
-  min-width: 200px;
-  
 }
 
 .main__left-side a {
@@ -122,23 +133,44 @@ button:active {
   margin-top: 12px;
 }
 
-
 .main__right-side {
   width: 50%;
   display: flex;
   justify-content: right;
-  -webkit-border-top-left-radius: 46px;
-  -webkit-border-bottom-left-radius: 46px;
-  -moz-border-radius-topleft: 46px;
-  -moz-border-radius-bottomleft: 46px;
-  border-top-left-radius: 46px;
-  border-bottom-left-radius: 46px;
 }
 
 .main__right-side img {
   object-fit: cover;
-  min-width: 450px;
-  min-height: 500px;
+  height: 100vh;
+  width: 100%;
+  border-top-left-radius: 46px;
+  border-bottom-left-radius: 46px;
+}
+
+.trending-topics {
+  height: 100vh;
+}
+
+.trending-topics h3 {
+  color: blue;
+}
+
+.trending-topics__grid {
+  display: grid;
+  gap: 16px;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+}
+
+.card img {
+  width: 190px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+footer {
+  height: 50vh;
 }
 
 @media (max-width: 880px) {
@@ -146,6 +178,10 @@ button:active {
   .navbar {
     justify-content: space-between;
   }
+
+    .navbar__ul {
+      display: none;
+    }
 
   .section__left-side {
     width: 300px;
@@ -157,30 +193,26 @@ button:active {
 }
 
 @media (max-width: 650px) {
-  .navbar__ul {
-    display: none;
-  }
-
-    .section__right-side-img {
-      width: 260px;
+    .main-section {
+      display: flex;
+      flex-direction: column;
     }
-}
 
-@media (max-width: 580px) {
-
-  .section__right-side-img {
-    width: 200px;
+  .main__right-side img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    }
   }
-}
+
 
 @media (max-width: 430px) {
-  .section__title, .main-section {
+  .section__title {
     display: flex;
     flex-direction: column;
   }
 
-  .section__title img {
-    width: 230px;
+  .main__right-side img {
+    width: 100%;
   }
 
   .section__left-side {
