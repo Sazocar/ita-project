@@ -152,7 +152,7 @@ body {
 }
 
 .team-grid {
-  margin: 0 4px;
+  margin: 74px 12px;
   display: grid;
   gap: 32px;
   place-content: center;
