@@ -28,6 +28,13 @@
   </header>
 
   <section class="section__title">
+
+    <img
+        class="addItem-button"
+        src="/src/assets/icons8-buying-48.png"
+        alt=""
+      />
+      
     <div class="section__left-side">
       <img src="/src/assets/Ita-Logo.png" class="img__ita-logo" alt="ITA-Logo">
     
@@ -127,6 +134,22 @@
     </div>
       <p class="copyright">©ITA MÉXICO. TODOS LOS DERECHOS RESERVADOS.</p>
   </footer> 
+
+  <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Indica el ítem que deseas agregar al carrito de compras</h1>
+        <input id="itemInput" type="text">
+
+        <button class="action-button" id="AddButton">Agregar</button>
+
+        <div class="Items">
+          <h3 class="subtitle">Agregados actualmente:</h3>
+        </div>
+      </div>
+    </div>
 
 
   <script defer src="/src/index.js"></script>
