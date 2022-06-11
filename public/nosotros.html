@@ -38,6 +38,11 @@
     </header>
 
     <section class="section__title">
+      <img
+        class="addItem-button"
+        src="/src/assets/icons8-buying-48.png"
+        alt=""
+      />
       <div class="section__left-side">
         <div class="up-group">
           <h1>Nosotros</h1>
@@ -75,10 +80,11 @@
 
     <div class="team-grid">
       <div class="card">
-        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon">
+        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon" />
         <img
           src="/src/assets/apuesto-joven-mirando-arriba-senalando-espacio-copia-superior-cara-ensueno-sonriendo-complacido-encontro-interesante-oferta-promocional-que-muestra-mejor-producto-oferta-venta-fondo-blanco_176420-55043.webp"
-          alt="" class="young-man"
+          alt=""
+          class="young-man"
         />
         <div class="developer-name">
           <h2>David Luna</h2>
@@ -86,7 +92,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon">
+        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon" />
         <p class="text">
           "Si quieres ir rápido, ve solo. Si quieres llegar lejos, ve
           acompañado."
@@ -97,10 +103,11 @@
         </div>
       </div>
       <div class="card">
-        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon">
+        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon" />
         <img
           src="/src/assets/apuesto-joven-mirando-arriba-senalando-espacio-copia-superior-cara-ensueno-sonriendo-complacido-encontro-interesante-oferta-promocional-que-muestra-mejor-producto-oferta-venta-fondo-blanco_176420-55043.webp"
-          alt="" class="young-man"
+          alt=""
+          class="young-man"
         />
         <div class="developer-name">
           <h2>David Luna</h2>
@@ -108,10 +115,11 @@
         </div>
       </div>
       <div class="card">
-        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon">
+        <img src="/src/assets/icons8-earth-64.png" alt="" class="earth-icon" />
         <img
           src="/src/assets/apuesto-joven-mirando-arriba-senalando-espacio-copia-superior-cara-ensueno-sonriendo-complacido-encontro-interesante-oferta-promocional-que-muestra-mejor-producto-oferta-venta-fondo-blanco_176420-55043.webp"
-          alt="" class="young-man"
+          alt=""
+          class="young-man"
         />
         <div class="developer-name">
           <h2>David Luna</h2>
@@ -136,6 +144,22 @@
       <p class="copyright">©ITA MÉXICO. TODOS LOS DERECHOS RESERVADOS.</p>
     </footer>
 
-    <script src="/src/index.js"></script>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Indica el ítem que deseas agregar al carrito de compras</h1>
+        <input id="itemInput" type="text">
+
+        <button class="action-button" id="AddButton">Agregar</button>
+
+        <div class="Items">
+          <h3 class="subtitle">Agregados actualmente:</h3>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="/src/index.js"></script>
   </body>
 </html>
