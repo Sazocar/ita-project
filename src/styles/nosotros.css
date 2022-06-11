@@ -173,7 +173,7 @@ body {
   gap: 32px;
   place-content: center;
   grid-template-columns: repeat(auto-fit, minmax(210px, auto));
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card {
