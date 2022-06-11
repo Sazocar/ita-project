@@ -145,7 +145,7 @@ body {
 }
 
 .main-section img {
-  width: 200px;
+  width: 300px;
   position: relative;
   right: 95px;
   bottom: -39px;
@@ -290,17 +290,43 @@ footer {
   .section__right-side-img {
     width: 320px;
   }
+
+  .team-logo {
+    width: 210px;
+  }
+
+    .main-section img {
+      width: 220px;
+    }
+
+  .team-description {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 650px) {
-  .main-section {
-    display: flex;
-    flex-direction: column;
+  .main-section img {
+    width: 150px;
+    bottom: -67px;
+    right: 59px;
   }
 
-  .main__right-side img {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    .team-description {
+      border-top: 16px solid #F8F8F8;
+      border-right: 16px solid #F8F8F8;
+      border-bottom: 16px solid #F8F8F8;
+    }
+}
+
+@media (max-width: 550px) {
+  .section__right-side-img {
+    width: 240px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__right-side-img {
+    width: 200px;
   }
 }
 
@@ -317,5 +343,33 @@ footer {
   .section__left-side {
     align-items: center;
     text-align: center;
+  }
+
+  .section__right-side-img {
+    width: 270px;
+  }
+
+  .team-description {
+    padding: 12px 22px;
+  }
+
+  .main-section img {
+    bottom: -8px;
+    width: 100px;
+  }
+
+  .team-description p {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .team-description {
+    font-size: 10px;
+  }
+
+  .team-description p {
+    margin-top: 12px;
   }
 }
