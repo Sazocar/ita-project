@@ -291,3 +291,31 @@ footer {
     width: 320px;
   }
 }
+
+@media (max-width: 650px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__right-side img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .section__title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__right-side img {
+    width: 100%;
+  }
+
+  .section__left-side {
+    align-items: center;
+    text-align: center;
+  }
+}
