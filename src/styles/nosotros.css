@@ -106,3 +106,47 @@ body {
 .section__right-side-img {
   width: 450px;
 }
+
+.main-section {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.team-logo {
+  width: 400px;
+  margin: 44px 0px 0px 44px;
+}
+
+.team-description {
+  border-top: 25px solid #F8F8F8;
+  border-right: 25px solid #F8F8F8;
+  border-bottom: 25px solid #F8F8F8;
+  border-radius: 0px 95px 95px 0px / 9px 86px 86px 0px;
+  width: 556px;
+  padding: 11px 59px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.team-description h2 {
+  font-weight: 400;
+}
+
+.team-description p {
+  font-size: 14px;
+}
+
+.team-description strong {
+  color: #E84991;
+}
+
+.main-section img {
+  width: 200px;
+  position: relative;
+  right: 95px;
+  bottom: -39px;
+}
