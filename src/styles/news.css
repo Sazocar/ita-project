@@ -298,9 +298,9 @@ footer {
     justify-content: space-between;
   }
 
-    .navbar__ul {
-      display: none;
-    }
+  .navbar__ul {
+    display: none;
+  }
 
   .section__left-side {
     width: 300px;
