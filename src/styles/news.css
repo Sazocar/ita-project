@@ -67,13 +67,13 @@ body {
   width: 250px;
 }
 
-.section__title__button {
+.action-button {
   width: 200px;
   padding: 1.3em 3em;
   font-size: 14px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  color: white;
+  background-color: #E84991;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -82,14 +82,14 @@ body {
   outline: none;
 }
 
-button:hover {
+.section__title__button:hover {
   background-color: #E84991;
   box-shadow: 0px 5px 5px #cc6995;
   color: #fff;
   transform: translateY(-7px);
 }
 
-button:active {
+.section__title__button:active {
   transform: translateY(-1px);
 }
 
@@ -147,26 +147,46 @@ button:active {
   border-bottom-left-radius: 46px;
 }
 
-.trending-topics {
-  height: 100vh;
+.trendig_topics {
+  margin: 34px;
 }
 
-.trending-topics h3 {
-  color: blue;
+.trendig_topics h2 {
+  margin-bottom: 24px;
+}
+
+.trendig_topics strong {
+  color:#E84991;
 }
 
 .trending-topics__grid {
   display: grid;
   gap: 16px;
   place-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card img {
-  width: 190px;
-  height: 230px;
+  width: 210px;
+  height: 250px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.card button {
+  width: 120px;
+  height: 30px;
+  padding: 6px;
+  font-size: 12px;
+  margin-top: -42px;
+  align-items: center;
 }
 
 footer {
