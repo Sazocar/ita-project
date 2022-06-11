@@ -150,3 +150,144 @@ body {
   right: 95px;
   bottom: -39px;
 }
+
+.team-grid {
+  margin: 0 4px;
+  display: grid;
+  gap: 32px;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+  height: 210px;
+}
+
+.young-man{
+  width: 210px;
+  border-radius: 15px;
+  border-radius: 10px;
+    background: #ffffff;
+    box-shadow: -1px -1px 2px #b3caec,
+      3px 3px 20px #8baee4;
+}
+
+.card button {
+  width: 120px;
+  height: 30px;
+  padding: 6px;
+  font-size: 12px;
+  margin-top: -42px;
+  align-items: center;
+}
+
+.earth-icon {
+  width: 32px;
+  position: relative;
+  top: 20px;
+  left: 56px;
+}
+
+.card:nth-child(2) {
+  width: 210px;
+}
+
+.text {
+  width: 210px;
+  text-align: center;
+  color: blue;
+  border-radius: 10px;
+  padding: 41px 9px;
+  background: #ffffff;
+  box-shadow: -1px -1px 2px #b3caec, 3px 3px 20px #8baee4;
+  box-sizing: border-box;
+}
+
+.developer-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.developer-name h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+.developer-name p {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.contact-button {
+  margin-top: 74px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-around;
+  color: white;
+  margin-top: 74px;
+  height: 175px;
+  background-color: #040D43;
+  justify-content: center;
+}
+
+.info {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info img {
+  width: 30px;
+  height: 30px;
+}
+
+.info h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.copyright {
+  font-size: 10px;
+}
+
+
+@media (max-width: 880px) {
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar__ul {
+    display: none;
+  }
+
+  .section__left-side {
+    width: 300px;
+  }
+
+  .section__right-side-img {
+    width: 320px;
+  }
+}
