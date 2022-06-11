@@ -152,7 +152,9 @@ body {
 }
 
 .trendig_topics h2 {
+  margin-left: 24px;
   margin-bottom: 24px;
+  font-size: 34px;
 }
 
 .trendig_topics strong {
@@ -164,6 +166,7 @@ body {
   gap: 16px;
   place-content: center;
   grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+  justify-content: space-around;
 }
 
 .card {
@@ -187,6 +190,46 @@ body {
   font-size: 12px;
   margin-top: -42px;
   align-items: center;
+}
+
+.news-section-tittle {
+  margin: 24px 24px;
+}
+
+.more_news__grid {
+  display: grid;
+    gap: 8px;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    justify-content: space-evenly;
+}
+
+.more-news-card {
+  padding: 18px;
+  width: 216px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 10px;
+    background: #ffffff;
+    box-shadow: -1px -1px 2px #b3caec,
+      3px 3px 20px #8baee4;
+}
+
+.date {
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.new-description {
+  font-size: 13px;
+}
+
+.see-more {
+  text-decoration: none;
+  color: #E84991;
 }
 
 footer {
